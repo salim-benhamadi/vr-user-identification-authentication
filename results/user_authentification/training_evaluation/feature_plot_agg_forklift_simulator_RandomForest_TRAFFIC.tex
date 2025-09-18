@@ -1,0 +1,49 @@
+% This file was created with matplot2tikz v0.4.0.
+\begin{tikzpicture}
+
+\definecolor{dodgerblue0143213}{RGB}{0,143,213}
+\definecolor{lightgray203}{RGB}{203,203,203}
+\definecolor{whitesmoke240}{RGB}{240,240,240}
+
+\begin{axis}[
+axis background/.style={fill=whitesmoke240},
+axis line style={whitesmoke240},
+tick align=outside,
+tick pos=left,
+title={Average Feature Importance Across All Users (Forklift\_simulator Game) (RandomForest Model)},
+x grid style={lightgray203},
+xlabel={Average Importance},
+xmajorgrids,
+xmin=0, xmax=0.0217698914892935,
+xtick style={color=black},
+y grid style={lightgray203},
+ymajorgrids,
+ymin=-0.89, ymax=9.89,
+ytick style={color=black},
+ytick={0,1,2,3,4,5,6,7,8,9},
+yticklabels={
+  LeftTouchPosX\_mean,
+  HeadPosZ\_min,
+  HeadPosZ\_75\%,
+  LeftTouchOrientationY\_75\%,
+  LeftTouchPosZ\_mean,
+  HeadPosY\_50\%,
+  HeadPosX\_mean,
+  HeadPosY\_25\%,
+  HeadPosZ\_mean,
+  LeftTouchPosX\_25\%
+}
+]
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,-0.4) rectangle (axis cs:0.0207332299898034,0.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,0.6) rectangle (axis cs:0.0194304602465608,1.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,1.6) rectangle (axis cs:0.0181827630775615,2.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,2.6) rectangle (axis cs:0.0179240318442366,3.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,3.6) rectangle (axis cs:0.0171305106298674,4.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,4.6) rectangle (axis cs:0.0163190902336368,5.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,5.6) rectangle (axis cs:0.0150047857721094,6.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,6.6) rectangle (axis cs:0.014761970638662,7.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,7.6) rectangle (axis cs:0.0142116122545726,8.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,8.6) rectangle (axis cs:0.0137232223818398,9.4);
+\end{axis}
+
+\end{tikzpicture}

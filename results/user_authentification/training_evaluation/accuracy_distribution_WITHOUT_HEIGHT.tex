@@ -1,0 +1,65 @@
+% This file was created with matplot2tikz v0.4.0.
+\begin{tikzpicture}
+
+\definecolor{dodgerblue}{RGB}{30,144,255}
+\definecolor{lightgray203}{RGB}{203,203,203}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{orange}{RGB}{255,165,0}
+\definecolor{whitesmoke240}{RGB}{240,240,240}
+
+\begin{axis}[
+axis background/.style={fill=whitesmoke240},
+axis line style={whitesmoke240},
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.03,0.97)},
+  anchor=north west,
+  draw=lightgray204,
+  fill=whitesmoke240
+},
+tick align=outside,
+tick pos=left,
+title={Distribution of Authentication Accuracy Across Users},
+x grid style={lightgray203},
+xlabel={Accuracy},
+xmajorgrids,
+xmin=0.840909090909091, xmax=1.00757575757576,
+xtick style={color=black},
+y grid style={lightgray203},
+ylabel={Number of Users},
+ymajorgrids,
+ymin=0, ymax=22.05,
+ytick style={color=black}
+]
+\draw[draw=none,fill=dodgerblue,fill opacity=0.5,very thin] (axis cs:0.939393939393939,0) rectangle (axis cs:0.945454545454546,1);
+\addlegendimage{ybar,ybar legend,draw=none,fill=dodgerblue,fill opacity=0.5,very thin}
+\addlegendentry{Forklift_simulator}
+
+\draw[draw=none,fill=dodgerblue,fill opacity=0.5,very thin] (axis cs:0.945454545454546,0) rectangle (axis cs:0.951515151515152,0);
+\draw[draw=none,fill=dodgerblue,fill opacity=0.5,very thin] (axis cs:0.951515151515152,0) rectangle (axis cs:0.957575757575758,0);
+\draw[draw=none,fill=dodgerblue,fill opacity=0.5,very thin] (axis cs:0.957575757575758,0) rectangle (axis cs:0.963636363636364,0);
+\draw[draw=none,fill=dodgerblue,fill opacity=0.5,very thin] (axis cs:0.963636363636364,0) rectangle (axis cs:0.96969696969697,4);
+\draw[draw=none,fill=dodgerblue,fill opacity=0.5,very thin] (axis cs:0.96969696969697,0) rectangle (axis cs:0.975757575757576,4);
+\draw[draw=none,fill=dodgerblue,fill opacity=0.5,very thin] (axis cs:0.975757575757576,0) rectangle (axis cs:0.981818181818182,0);
+\draw[draw=none,fill=dodgerblue,fill opacity=0.5,very thin] (axis cs:0.981818181818182,0) rectangle (axis cs:0.987878787878788,0);
+\draw[draw=none,fill=dodgerblue,fill opacity=0.5,very thin] (axis cs:0.987878787878788,0) rectangle (axis cs:0.993939393939394,0);
+\draw[draw=none,fill=dodgerblue,fill opacity=0.5,very thin] (axis cs:0.993939393939394,0) rectangle (axis cs:1,21);
+\draw[draw=none,fill=orange,fill opacity=0.5,very thin] (axis cs:0.848484848484849,0) rectangle (axis cs:0.863636363636364,1);
+\addlegendimage{ybar,ybar legend,draw=none,fill=orange,fill opacity=0.5,very thin}
+\addlegendentry{Beat_saber}
+
+\draw[draw=none,fill=orange,fill opacity=0.5,very thin] (axis cs:0.863636363636364,0) rectangle (axis cs:0.878787878787879,1);
+\draw[draw=none,fill=orange,fill opacity=0.5,very thin] (axis cs:0.878787878787879,0) rectangle (axis cs:0.893939393939394,0);
+\draw[draw=none,fill=orange,fill opacity=0.5,very thin] (axis cs:0.893939393939394,0) rectangle (axis cs:0.909090909090909,4);
+\draw[draw=none,fill=orange,fill opacity=0.5,very thin] (axis cs:0.909090909090909,0) rectangle (axis cs:0.924242424242424,3);
+\draw[draw=none,fill=orange,fill opacity=0.5,very thin] (axis cs:0.924242424242424,0) rectangle (axis cs:0.939393939393939,0);
+\draw[draw=none,fill=orange,fill opacity=0.5,very thin] (axis cs:0.939393939393939,0) rectangle (axis cs:0.954545454545455,2);
+\draw[draw=none,fill=orange,fill opacity=0.5,very thin] (axis cs:0.954545454545455,0) rectangle (axis cs:0.96969696969697,4);
+\draw[draw=none,fill=orange,fill opacity=0.5,very thin] (axis cs:0.96969696969697,0) rectangle (axis cs:0.984848484848485,1);
+\draw[draw=none,fill=orange,fill opacity=0.5,very thin] (axis cs:0.984848484848485,0) rectangle (axis cs:1,14);
+\end{axis}
+
+\end{tikzpicture}

@@ -1,0 +1,49 @@
+% This file was created with matplot2tikz v0.4.0.
+\begin{tikzpicture}
+
+\definecolor{dodgerblue0143213}{RGB}{0,143,213}
+\definecolor{lightgray203}{RGB}{203,203,203}
+\definecolor{whitesmoke240}{RGB}{240,240,240}
+
+\begin{axis}[
+axis background/.style={fill=whitesmoke240},
+axis line style={whitesmoke240},
+tick align=outside,
+tick pos=left,
+title={Average Feature Importance Across All Users (Forklift\_simulator Game) (RandomForest Model)},
+x grid style={lightgray203},
+xlabel={Average Importance},
+xmajorgrids,
+xmin=0, xmax=0.0237686466854473,
+xtick style={color=black},
+y grid style={lightgray203},
+ymajorgrids,
+ymin=-0.89, ymax=9.89,
+ytick style={color=black},
+ytick={0,1,2,3,4,5,6,7,8,9},
+yticklabels={
+  LeftTouchPosX\_mean,
+  HeadPosZ\_min,
+  LeftTouchOrientationY\_75\%,
+  HeadPosZ\_75\%,
+  LeftTouchPosZ\_mean,
+  HeadPosZ\_mean,
+  LeftTouchPosX\_25\%,
+  HeadPosX\_mean,
+  RightTouchPosZ\_max,
+  HeadOrientationW\_mean
+}
+]
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,-0.4) rectangle (axis cs:0.0226368063670927,0.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,0.6) rectangle (axis cs:0.0224498791933774,1.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,1.6) rectangle (axis cs:0.021896693411126,2.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,2.6) rectangle (axis cs:0.0218228038226426,3.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,3.6) rectangle (axis cs:0.0179586071256478,4.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,4.6) rectangle (axis cs:0.0165942685723407,5.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,5.6) rectangle (axis cs:0.0163849781402213,6.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,6.6) rectangle (axis cs:0.0157222911662537,7.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,7.6) rectangle (axis cs:0.0143368675050527,8.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,8.6) rectangle (axis cs:0.0143343247734886,9.4);
+\end{axis}
+
+\end{tikzpicture}

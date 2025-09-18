@@ -1,0 +1,49 @@
+% This file was created with matplot2tikz v0.4.0.
+\begin{tikzpicture}
+
+\definecolor{dodgerblue0143213}{RGB}{0,143,213}
+\definecolor{lightgray203}{RGB}{203,203,203}
+\definecolor{navy}{RGB}{0,0,128}
+\definecolor{whitesmoke240}{RGB}{240,240,240}
+
+\begin{axis}[
+axis background/.style={fill=whitesmoke240},
+axis line style={whitesmoke240},
+tick align=outside,
+tick pos=left,
+title={ROC Curve - User 0, Beat\_saber Game (RandomForest Model)},
+x grid style={lightgray203},
+xlabel={False Positive Rate},
+xmajorgrids,
+xmin=-0.05, xmax=1.05,
+xtick style={color=black},
+y grid style={lightgray203},
+ylabel={True Positive Rate},
+ymajorgrids,
+ymin=-0.05, ymax=1.05,
+ytick style={color=black}
+]
+\addplot [thick, dodgerblue0143213]
+table {%
+0 0
+0 0.166666666666667
+0 1
+0.470588235294118 1
+0.764705882352941 1
+0.941176470588235 1
+1 1
+};
+\addplot [thick, navy, dashed]
+table {%
+0 0
+1 1
+};
+\draw (axis cs:0.6,0.2) node[
+  scale=0.6,
+  anchor=base west,
+  text=black,
+  rotate=0.0
+]{AUC = 1.000};
+\end{axis}
+
+\end{tikzpicture}

@@ -1,0 +1,49 @@
+% This file was created with matplot2tikz v0.4.0.
+\begin{tikzpicture}
+
+\definecolor{dodgerblue0143213}{RGB}{0,143,213}
+\definecolor{lightgray203}{RGB}{203,203,203}
+\definecolor{whitesmoke240}{RGB}{240,240,240}
+
+\begin{axis}[
+axis background/.style={fill=whitesmoke240},
+axis line style={whitesmoke240},
+tick align=outside,
+tick pos=left,
+title={Average Feature Importance Across All Users (Beat\_saber Game) (RandomForest Model)},
+x grid style={lightgray203},
+xlabel={Average Importance},
+xmajorgrids,
+xmin=0, xmax=0.0142319208843371,
+xtick style={color=black},
+y grid style={lightgray203},
+ymajorgrids,
+ymin=-0.89, ymax=9.89,
+ytick style={color=black},
+ytick={0,1,2,3,4,5,6,7,8,9},
+yticklabels={
+  HeadOrientationX\_mean,
+  distance\_RightTouch\_to\_Head\_max,
+  HeadOrientationX\_75\%,
+  distance\_LeftTouch\_to\_Head\_50\%,
+  HeadPosZ\_75\%,
+  HeadOrientationZ\_50\%,
+  HeadOrientationZ\_mean,
+  HeadOrientationW\_75\%,
+  HeadPosZ\_50\%,
+  HeadOrientationX\_50\%
+}
+]
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,-0.4) rectangle (axis cs:0.0135542103660353,0.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,0.6) rectangle (axis cs:0.0135068119060274,1.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,1.6) rectangle (axis cs:0.0128265037849262,2.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,2.6) rectangle (axis cs:0.0117065038531936,3.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,3.6) rectangle (axis cs:0.0109544080421756,4.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,4.6) rectangle (axis cs:0.0105756920695802,5.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,5.6) rectangle (axis cs:0.0105139647911443,6.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,6.6) rectangle (axis cs:0.0100293878294198,7.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,7.6) rectangle (axis cs:0.00987961754711794,8.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,8.6) rectangle (axis cs:0.00980004047661732,9.4);
+\end{axis}
+
+\end{tikzpicture}

@@ -1,0 +1,101 @@
+% This file was created with matplot2tikz v0.4.0.
+\begin{tikzpicture}
+
+\definecolor{dodgerblue0143213}{RGB}{0,143,213}
+\definecolor{goldenrod22917456}{RGB}{229,174,56}
+\definecolor{lightgray203}{RGB}{203,203,203}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{olivedrab10914479}{RGB}{109,144,79}
+\definecolor{tomato2527948}{RGB}{252,79,48}
+\definecolor{whitesmoke240}{RGB}{240,240,240}
+
+\begin{axis}[
+axis background/.style={fill=whitesmoke240},
+axis line style={whitesmoke240},
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.5,0.09)},
+  anchor=south,
+  draw=lightgray204,
+  fill=whitesmoke240
+},
+tick align=outside,
+tick pos=left,
+title={Performance Metrics vs. Threshold - User 30, Forklift\_simulator Game (RandomForest Model)},
+x grid style={lightgray203},
+xlabel={Threshold},
+xmajorgrids,
+xmin=-0.05, xmax=1.05,
+xtick style={color=black},
+y grid style={lightgray203},
+ylabel={Metric Value},
+ymajorgrids,
+ymin=0.3, ymax=1.03333333333333,
+ytick style={color=black}
+]
+\addplot [ultra thick, dodgerblue0143213, mark=*, mark size=3, mark options={solid}]
+table {%
+0 0.363636363636364
+0.1 0.8
+0.2 0.857142857142857
+0.3 1
+0.4 1
+0.5 1
+0.6 1
+0.7 1
+0.8 1
+0.9 1
+1 1
+};
+\addlegendentry{Precision}
+\addplot [ultra thick, tomato2527948, mark=*, mark size=3, mark options={solid}]
+table {%
+0 1
+0.1 1
+0.2 1
+0.3 1
+0.4 1
+0.5 1
+0.6 1
+0.7 1
+0.8 1
+0.9 1
+1 0.333333333333333
+};
+\addlegendentry{Recall}
+\addplot [ultra thick, goldenrod22917456, mark=*, mark size=3, mark options={solid}]
+table {%
+0 0.533333333333333
+0.1 0.888888888888889
+0.2 0.923076923076923
+0.3 1
+0.4 1
+0.5 1
+0.6 1
+0.7 1
+0.8 1
+0.9 1
+1 0.5
+};
+\addlegendentry{F1}
+\addplot [ultra thick, olivedrab10914479, mark=*, mark size=3, mark options={solid}]
+table {%
+0 0.363636363636364
+0.1 0.909090909090909
+0.2 0.939393939393939
+0.3 1
+0.4 1
+0.5 1
+0.6 1
+0.7 1
+0.8 1
+0.9 1
+1 0.757575757575758
+};
+\addlegendentry{Accuracy}
+\end{axis}
+
+\end{tikzpicture}

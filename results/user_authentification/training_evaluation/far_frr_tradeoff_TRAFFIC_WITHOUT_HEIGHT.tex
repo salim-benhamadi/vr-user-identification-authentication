@@ -1,0 +1,106 @@
+% This file was created with matplot2tikz v0.4.0.
+\begin{tikzpicture}
+
+\definecolor{dodgerblue}{RGB}{30,144,255}
+\definecolor{lightgray203}{RGB}{203,203,203}
+\definecolor{lightgray204}{RGB}{204,204,204}
+\definecolor{orange}{RGB}{255,165,0}
+\definecolor{whitesmoke240}{RGB}{240,240,240}
+
+\begin{axis}[
+axis background/.style={fill=whitesmoke240},
+axis line style={whitesmoke240},
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, draw=lightgray204, fill=whitesmoke240},
+tick align=outside,
+tick pos=left,
+title={FAR vs FRR Trade-off Across Users},
+x grid style={lightgray203},
+xlabel={False Acceptance Rate (FAR)},
+xmajorgrids,
+xmin=0, xmax=1,
+xtick style={color=black},
+y grid style={lightgray203},
+ylabel={False Rejection Rate (FRR)},
+ymajorgrids,
+ymin=0, ymax=1,
+ytick style={color=black}
+]
+\addplot [draw=dodgerblue, fill=dodgerblue, mark=*, only marks, opacity=0.7]
+table{%
+x  y
+0 0
+0 0
+0 0.0833333333333333
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0.0833333333333333
+0 0
+0 0.0833333333333333
+0 0
+0 0.0833333333333333
+0 0
+0 0
+0 0.0833333333333333
+0 0
+0 0.166666666666667
+0 0
+0 0
+0 0
+0 0
+0 0
+0.0555555555555556 0
+0 0
+0 0.0833333333333333
+0 0
+0.0476190476190476 0
+};
+\addlegendentry{Forklift_simulator}
+\addplot [draw=orange, fill=orange, mark=square*, only marks, opacity=0.7]
+table{%
+x  y
+0 0.25
+0 0
+0 0
+0 0
+0 0.0833333333333333
+0 0
+0 0
+0 0
+0 0.0833333333333333
+0 0
+0 0
+0 0
+0.0740740740740741 0
+0 0.0833333333333333
+0.0416666666666667 0.0833333333333333
+0 0.0833333333333333
+0.05 0
+0 0.166666666666667
+0.0526315789473684 0
+0 0.0833333333333333
+0 0.25
+0 0
+0 0
+0 0
+0.0625 0.0833333333333333
+0.0476190476190476 0.0833333333333333
+0.0625 0
+0 0.0833333333333333
+0 0
+0 0
+};
+\addlegendentry{Beat_saber}
+\addplot [ultra thick, black, opacity=0.3, dashed, forget plot]
+table {%
+0 1
+1 0
+};
+\end{axis}
+
+\end{tikzpicture}

@@ -1,0 +1,49 @@
+% This file was created with matplot2tikz v0.4.0.
+\begin{tikzpicture}
+
+\definecolor{dodgerblue0143213}{RGB}{0,143,213}
+\definecolor{lightgray203}{RGB}{203,203,203}
+\definecolor{whitesmoke240}{RGB}{240,240,240}
+
+\begin{axis}[
+axis background/.style={fill=whitesmoke240},
+axis line style={whitesmoke240},
+tick align=outside,
+tick pos=left,
+title={Average Feature Importance Across All Users (Beat\_saber Game) (RandomForest Model)},
+x grid style={lightgray203},
+xlabel={Average Importance},
+xmajorgrids,
+xmin=0, xmax=0.0231472917194102,
+xtick style={color=black},
+y grid style={lightgray203},
+ymajorgrids,
+ymin=-0.89, ymax=9.89,
+ytick style={color=black},
+ytick={0,1,2,3,4,5,6,7,8,9},
+yticklabels={
+  direction\_count\_ul,
+  size\_rate\_50\%,
+  size\_rate\_25\%,
+  size\_rate\_mean,
+  distance\_LeftTouch\_to\_Head\_max,
+  HeadOrientationX\_75\%,
+  size\_mean,
+  HeadOrientationX\_50\%,
+  size\_rate\_std,
+  HeadOrientationX\_25\%
+}
+]
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,-0.4) rectangle (axis cs:0.0220450397327716,0.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,0.6) rectangle (axis cs:0.017747550302721,1.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,1.6) rectangle (axis cs:0.0173868362912823,2.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,2.6) rectangle (axis cs:0.016391872075499,3.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,3.6) rectangle (axis cs:0.0151528981904984,4.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,4.6) rectangle (axis cs:0.014897100124127,5.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,5.6) rectangle (axis cs:0.0144351911763794,6.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,6.6) rectangle (axis cs:0.0141634162046213,7.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,7.6) rectangle (axis cs:0.0132239145227246,8.4);
+\draw[draw=none,fill=dodgerblue0143213,very thin] (axis cs:0,8.6) rectangle (axis cs:0.0128744660755616,9.4);
+\end{axis}
+
+\end{tikzpicture}

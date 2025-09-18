@@ -1,0 +1,133 @@
+% This file was created with matplot2tikz v0.4.0.
+\begin{tikzpicture}
+
+\definecolor{lightgray203}{RGB}{203,203,203}
+\definecolor{whitesmoke240}{RGB}{240,240,240}
+
+\begin{axis}[
+axis background/.style={fill=whitesmoke240},
+axis line style={whitesmoke240},
+colorbar,
+colorbar style={ylabel={Intruder Success Rate}},
+colormap={mymap}{[1pt]
+  rgb(0pt)=(1,0.96078431372549,0.941176470588235);
+  rgb(1pt)=(0.996078431372549,0.87843137254902,0.823529411764706);
+  rgb(2pt)=(0.988235294117647,0.733333333333333,0.631372549019608);
+  rgb(3pt)=(0.988235294117647,0.572549019607843,0.447058823529412);
+  rgb(4pt)=(0.984313725490196,0.415686274509804,0.290196078431373);
+  rgb(5pt)=(0.937254901960784,0.231372549019608,0.172549019607843);
+  rgb(6pt)=(0.796078431372549,0.0941176470588235,0.113725490196078);
+  rgb(7pt)=(0.647058823529412,0.0588235294117647,0.0823529411764706);
+  rgb(8pt)=(0.403921568627451,0,0.0509803921568627)
+},
+point meta max=0.015,
+point meta min=0.0122727272727273,
+tick align=outside,
+tick pos=left,
+title={Feature Similarity vs Importance for All Successful Targets
+(Bubble size = Feature Importance, Color = Success Rate)},
+x grid style={lightgray203},
+xlabel={Mean Value Similarity},
+xmajorgrids,
+xmin=-0.00320881873290879, xmax=1.04523500538147,
+xtick style={color=black},
+y grid style={lightgray203},
+ylabel={Combined Similarity (Mean + Std)},
+ymajorgrids,
+ymin=0.0654040969690564, ymax=0.951290307570479,
+ytick style={color=black}
+]
+\addplot [
+  colormap={mymap}{[1pt]
+  rgb(0pt)=(1,0.96078431372549,0.941176470588235);
+  rgb(1pt)=(0.996078431372549,0.87843137254902,0.823529411764706);
+  rgb(2pt)=(0.988235294117647,0.733333333333333,0.631372549019608);
+  rgb(3pt)=(0.988235294117647,0.572549019607843,0.447058823529412);
+  rgb(4pt)=(0.984313725490196,0.415686274509804,0.290196078431373);
+  rgb(5pt)=(0.937254901960784,0.231372549019608,0.172549019607843);
+  rgb(6pt)=(0.796078431372549,0.0941176470588235,0.113725490196078);
+  rgb(7pt)=(0.647058823529412,0.0588235294117647,0.0823529411764706);
+  rgb(8pt)=(0.403921568627451,0,0.0509803921568627)
+},
+  only marks,
+  scatter,
+  scatter src=explicit,
+  scatter/@pre marker code/.append style={/tikz/mark size=\perpointmarksize},
+  visualization depends on={\thisrow{sizedata} \as\perpointmarksize}
+]
+table [x=x, y=y, meta=colordata]{%
+x  y  colordata  sizedata
+0.991981498996345 0.798942496630967 0.013636363636363636 3.9879256515272288
+0.688016529142583 0.752999519906354 0.013636363636363636 3.4850888244247074
+0.69482464788672 0.782701998549781 0.013636363636363636 3.02110943674936
+0.0444477187268356 0.306007833673762 0.013636363636363636 2.921898781035271
+0.993627228176939 0.759736162912507 0.013636363636363636 2.9066342079636507
+0.987971396751001 0.911022752543141 0.013636363636363636 2.797972411004472
+0.992088274116585 0.828000801694325 0.013636363636363636 2.7888263645719826
+0.997578467921724 0.751833228038603 0.013636363636363636 2.7813613048620396
+0.0531236452061763 0.21847472282354 0.013636363636363636 2.7148719293399615
+0.118562612937522 0.105671651996394 0.013636363636363636 2.6815970272993983
+};
+\draw (axis cs:0.991981498996345,0.798942496630967) ++(5pt,5pt) node[
+  scale=0.35,
+  anchor=base west,
+  text=black,
+  rotate=0.0
+]{HeadPosX...};
+\draw (axis cs:0.688016529142583,0.752999519906354) ++(5pt,5pt) node[
+  scale=0.35,
+  anchor=base west,
+  text=black,
+  rotate=0.0
+]{RightTou...};
+\draw (axis cs:0.69482464788672,0.782701998549781) ++(5pt,5pt) node[
+  scale=0.35,
+  anchor=base west,
+  text=black,
+  rotate=0.0
+]{HeadOrie...};
+\draw (axis cs:0.0444477187268356,0.306007833673762) ++(5pt,5pt) node[
+  scale=0.35,
+  anchor=base west,
+  text=black,
+  rotate=0.0
+]{HeadOrie...};
+\draw (axis cs:0.993627228176939,0.759736162912507) ++(5pt,5pt) node[
+  scale=0.35,
+  anchor=base west,
+  text=black,
+  rotate=0.0
+]{HeadPosX...};
+\draw (axis cs:0.987971396751001,0.911022752543141) ++(5pt,5pt) node[
+  scale=0.35,
+  anchor=base west,
+  text=black,
+  rotate=0.0
+]{HeadPosX...};
+\draw (axis cs:0.992088274116585,0.828000801694325) ++(5pt,5pt) node[
+  scale=0.35,
+  anchor=base west,
+  text=black,
+  rotate=0.0
+]{HeadPosX...};
+\draw (axis cs:0.997578467921724,0.751833228038603) ++(5pt,5pt) node[
+  scale=0.35,
+  anchor=base west,
+  text=black,
+  rotate=0.0
+]{HeadPosX...};
+\draw (axis cs:0.0531236452061763,0.21847472282354) ++(5pt,5pt) node[
+  scale=0.35,
+  anchor=base west,
+  text=black,
+  rotate=0.0
+]{HeadOrie...};
+\draw (axis cs:0.118562612937522,0.105671651996394) ++(5pt,5pt) node[
+  scale=0.35,
+  anchor=base west,
+  text=black,
+  rotate=0.0
+]{HeadOrie...};
+\end{axis}
+
+\end{tikzpicture}

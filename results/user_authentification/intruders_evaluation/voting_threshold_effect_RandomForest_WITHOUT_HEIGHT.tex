@@ -1,0 +1,41 @@
+% This file was created with matplot2tikz v0.4.0.
+\begin{tikzpicture}
+
+\definecolor{lightgray203}{RGB}{203,203,203}
+\definecolor{purple}{RGB}{128,0,128}
+\definecolor{whitesmoke240}{RGB}{240,240,240}
+
+\begin{axis}[
+axis background/.style={fill=whitesmoke240},
+axis line style={whitesmoke240},
+tick align=outside,
+tick pos=left,
+title={Intruder Success Rate by Voting Threshold},
+x grid style={lightgray203},
+xlabel={Voting Threshold},
+xmajorgrids,
+xmin=-0.05, xmax=1.05,
+xtick style={color=black},
+y grid style={lightgray203},
+ylabel={Success Rate},
+ymajorgrids,
+ymin=0, ymax=1,
+ytick style={color=black}
+]
+\addplot [thick, purple, mark=*, mark size=3, mark options={solid}]
+table {%
+0 1
+0.1 0.00408314773570898
+0.2 0.00167037861915367
+0.3 0.000556792873051225
+0.4 0
+0.5 0
+0.6 0
+0.7 0
+0.8 0
+0.9 0
+1 0
+};
+\end{axis}
+
+\end{tikzpicture}
